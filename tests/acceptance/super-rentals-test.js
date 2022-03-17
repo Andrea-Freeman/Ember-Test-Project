@@ -15,7 +15,9 @@ module('Acceptance | super rentals', function(hooks) {
     await click('.jumbo a.button');
 
     assert.equal(currentURL(), '/about');
+
   });
+
   test('visiting /about', async function(assert) {
     await visit('/about');
 
@@ -26,7 +28,7 @@ module('Acceptance | super rentals', function(hooks) {
     await click('.jumbo a.button');
 
     assert.equal(currentURL(), '/getting-in-touch');
-  
+  })
 
   test('visiting /getting-in-touch', async function(assert) {
     await visit('/getting-in-touch');
@@ -41,4 +43,4 @@ module('Acceptance | super rentals', function(hooks) {
   
   });
   });
-});
+
